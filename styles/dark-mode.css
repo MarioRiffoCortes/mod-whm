@@ -1,0 +1,71 @@
+:root {
+    --bg-color: #f0f4f8;
+    --text-color: #1e293b;
+    --card-bg: #ffffff;
+    --input-bg: #ffffff;
+    --input-border: #e2e8f0;
+    --footer-text: #64748b;
+    --primary-orange: #F75934;
+    --primary-hover: #fa8231;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    
+    /* Futuristic Variables */
+    --primary-accent: var(--primary-orange);
+    --neon-glow: rgba(247, 89, 52, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode {
+    --bg-color: #050b14; /* Deep Cyber Blue */
+    --text-color: #e2e8f0;
+    --card-bg: rgba(10, 15, 30, 0.8);
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-border: rgba(0, 243, 255, 0.2);
+    --footer-text: #94a3b8;
+    --shadow-color: rgba(0, 0, 0, 0.6);
+    --glass-bg: rgba(10, 15, 30, 0.7);
+    --glass-border: rgba(247, 89, 52, 0.3);
+
+    /* Dark Mode Futuristic Accents */
+    --primary-accent: var(--primary-hover);
+    --neon-glow: rgba(247, 89, 52, 0.4);
+}
+
+/* Toggle Button Styles - Futuristic Version */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 900;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    color: var(--primary-accent);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 15px var(--neon-glow);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1) rotate(15deg);
+    background: var(--primary-accent);
+    color: #000;
+    box-shadow: 0 0 25px var(--primary-accent);
+}
+
+.dark-mode-toggle i {
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}

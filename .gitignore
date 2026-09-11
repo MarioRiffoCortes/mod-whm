@@ -1,0 +1,7 @@
+# Credenciales reales — nunca subir esto a un repositorio público.
+# Usa ADM/config.example.php y ADM/config-ad.example.php como plantillas.
+ADM/config.php
+ADM/config-ad.php
+
+# Caché de datos por servidor (se regenera sola, no aporta al código)
+scripts/cache/*.json
